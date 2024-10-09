@@ -13,6 +13,7 @@ struct ContentView: View {
     var body: some View {
         HStack {
             Text("🌙")
+            Text("UP")
             Image(systemName: "arrow.up.circle")
                 // Bounce with a scale-up animation.
                 .symbolEffect(.bounce.up, value: value1)
@@ -25,6 +26,7 @@ struct ContentView: View {
                 .onTapGesture {
                     value2 += 1
                 }
+            Text("DOWN")
             Text("🌙")
         }
     }
