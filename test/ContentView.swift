@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var value2 = 0
     var body: some View {
         HStack {
+            Text("HIIIII")
             Image(systemName: "arrow.up.circle")
                 // Bounce with a scale-up animation.
                 .symbolEffect(.bounce.up, value: value1)
